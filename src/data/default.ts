@@ -23,20 +23,127 @@ const createKinkCategory = (name: string, subcategories: string[], kinks: string
 });
 
 export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] => [
-    createKinkCategory("Bodies", ["Self", "Partner"], ["Skinny", "Chubby", "Small breasts", "Large breasts", "Small cocks", "Large cocks"], defaultRating),
-    createKinkCategory("Clothing", ["Self", "Partner"], ["Clothed sex", "Lingerie", "Stockings", "Heels", "Leather", "Latex", "Uniform / costume", "Cross-dressing"], defaultRating),
-    createKinkCategory("Groupings", ["General"], ["You and 1 male", "You and 1 female", "You and trans female", "You and trans male", "You and 1 male, 1 female", "You and 2 males", "You and 2 females", "Orgy"], defaultRating),
-    createKinkCategory("General", ["Giving", "Receiving"], ["Romance / Affection", "Handjob / fingering", "Blowjob", "Deep throat", "Swallowing", "Facials", "Cunnilingus", "Face-sitting", "Edging", "Teasing", "JOI, SI"], defaultRating),
-    createKinkCategory("Ass play", ["Giving", "Receiving"], ["Anal toys", "Anal sex, pegging", "Rimming", "Double penetration", "Anal fisting"], defaultRating),
-    createKinkCategory("Restrictive", ["Self", "Partner"], ["Gag", "Collar", "Leash", "Chastity", "Bondage (Light)", "Bondage (Heavy)", "Encasement"], defaultRating),
-    createKinkCategory("Toys", ["Self", "Partner"], ["Dildos", "Plugs", "Vibrators", "Sounding"], defaultRating),
-    createKinkCategory("Domination", ["Dominant", "Submissive"], ["Dominant / Submissive", "Domestic servitude", "Slavery", "Pet play", "DD/lg, MD/lb", "Discipline", "Begging", "Forced orgasm", "Orgasm control", "Orgasm denial", "Power exchange"], defaultRating),
-    createKinkCategory("No consent", ["Aggressor", "Target"], ["Non-con / rape", "Blackmail / coercion", "Kidnapping", "Drugs", "Alcohol", "Sleep play"], defaultRating),
-    createKinkCategory("Taboo", ["General"], ["Incest", "Age gap", "Raceplay", "Bestiality", "Necrophilia", "Cheating", "Exhibitionism", "Voyeurism"], defaultRating),
-    createKinkCategory("Surrealism", ["Self", "Partner"], ["Futanari", "Furry", "Vore", "Transformation", "Tentacles", "Monster or Alien"], defaultRating),
-    createKinkCategory("Fluids", ["General"], ["Blood", "Watersports", "Scat", "Lactation", "Diapers", "Cum play"], defaultRating),
-    createKinkCategory("Degradation", ["Giving", "Receiving"], ["Glory hole", "Name calling", "Humiliation"], defaultRating),
-    createKinkCategory("Touch & Stimulation", ["Actor", "Subject"], ["Cock/Pussy worship", "Ass worship", "Foot play", "Tickling", "Sensation play", "Electro stimulation"], defaultRating),
-    createKinkCategory("Misc. Fetish", ["Giving", "Receiving"], ["Fisting", "Gangbang", "Breath play", "Impregnation", "Pregnancy", "Feminization", "Cuckold / Cuckquean"], defaultRating),
-    createKinkCategory("Pain", ["Giving", "Receiving"], ["Light pain", "Heavy pain", "Nipple clamps", "Clothes pins", "Caning", "Flogging", "Beating", "Spanking", "Cock/Pussy slapping", "Cock/Pussy torture", "Hot Wax", "Scratching", "Biting", "Cutting"], defaultRating),
-]
+    createKinkCategory("Bodies", ["Self", "Partner"], [
+        "Skinny Girls", "Fat Girls", "Tall Girls", "Short Girls", "Athletic Girls", "Obese Girls",
+        "Big Cock", "Small Cock", "Big Tits", "Flat Tits", "Big Areola", "Small Areola",
+        "Big Feet", "Small Feet", "Big Hands", "Small Hands", "Pregnant Girls"
+    ], defaultRating),
+
+    createKinkCategory("Clothing & Accessories", ["Self", "Partner"], [
+        "Clothed Sex", "Lingerie", "Pantyhose", "Socks", "Dirty Socks", "Shoes", "Dirty Shoes",
+        "Gloves", "Glasses", "Contacts", "Underwear", "Corsets", "Body Harnesses"
+    ], defaultRating),
+
+    createKinkCategory("Groupings", ["General"], [
+        "Group Sex", "3+ Penetration", "Double Penetration", "Spitroasting", "Gangbanged by Smaller",
+        "Reverse Harem", "Harems"
+    ], defaultRating),
+
+    createKinkCategory("Oral", ["Giving", "Receiving"], [
+        "Cunnilingus", "Fellatio", "Autofellatio", "Autocunnilingus", "Oral Sex", "Analingus", "Face-fucking",
+        "Gagging", "Cum on Face", "Cum on Hair", "Gokkun", "Nursing Handjob"
+    ], defaultRating),
+
+    createKinkCategory("Anal", ["Giving", "Receiving"], [
+        "Anal Sex", "Rimjobs", "Anal Vibrators", "Anal Prolapse", "Rosebudding", "Assjobs",
+        "Ass Expansion", "Assrape"
+    ], defaultRating),
+
+    createKinkCategory("Domination & Degradation", ["Dominant", "Submissive"], [
+        "Cuckolding", "Cuckqueaning", "Humiliation", "Name-calling", "Degradation",
+        "Small Penis Humilation", "Public Use", "Master", "Slave", "Pet", "Submission"
+    ], defaultRating),
+
+    createKinkCategory("Consent & Non-Consent", ["Aggressor", "Target"], [
+        "Rape", "Defeat Rape", "Victory Rape", "Pseudo Rape", "Trapped Rape",
+        "Sex in Exchange for Services", "Blackmail / Coercion", "Kidnapping"
+    ], defaultRating),
+
+    createKinkCategory("Fantasy & Surreal", ["Self", "Partner"], [
+        "Aliens", "Tentacle Rape", "Monstergirls", "Monster Sex", "Monster Rape",
+        "Furries", "Transformation", "Demons", "Angels", "Dragons", "Succubus", "Incubus"
+    ], defaultRating),
+
+    createKinkCategory("Fluids", ["General"], [
+        "Cum on Face", "Cum on Legs", "Cum on Ass", "Cum on Feet", "Cum on Pussy",
+        "Cum on Armpits", "Cumming Inside", "Cumming Outside", "Menstruation",
+        "Lactation", "Piss", "Squirting"
+    ], defaultRating),
+
+    createKinkCategory("Pain & Play", ["Giving", "Receiving"], [
+        "Spanking", "Flogging", "Slapping", "Ball Busting", "Cuntbusting",
+        "Hot Wax", "Scratching", "Biting", "Cutting", "Nipple Clamps"
+    ], defaultRating),
+
+    createKinkCategory("Psychological & Emotional", ["General"], [
+        "Embarrassment", "Blushing", "Fear", "Seduction", "Being Teased",
+        "Uninterested", "Ignoring", "Sexual Frustration", "Urgency for Sex",
+        "Desperation", "Shame", "Voyeurism", "Exhibitionism"
+    ], defaultRating),
+
+    createKinkCategory("Taboo", ["General"], [
+        "Incest", "Ageplay", "Interracial", "Bestiality", "Necrophilia",
+        "Zoophilia", "Lolicon", "Shotacon", "Toddlercon", "Dads", "Moms",
+        "Babysitters", "Elderly", "Mature", "Celebrities", "Netorare"
+    ], defaultRating),
+
+    createKinkCategory("Gender & Identity", ["Self", "Partner"], [
+        "Crossdressing", "Feminization", "Sissification", "Trap", "Reverse Trap",
+        "Futas", "Shemales", "Cuntboys", "Busty Boys", "Genderbend M2F", "Genderbend F2M",
+        "Transexual", "Transgender", "Bishonen", "Tomboys"
+    ], defaultRating),
+
+    createKinkCategory("Sci-Fi & Supernatural", ["Self", "Partner"], [
+        "Aliens", "Ghosts", "Demons", "Angels", "Mind Control", "Hypnosis",
+        "Machines", "Cyborgs", "Robots", "Hiveminds", "Possession", "Psychosis",
+        "Time Stop", "Transforming", "Viral Transform", "X-Ray"
+    ], defaultRating),
+
+    createKinkCategory("Creatures & Mythical", ["Self", "Partner"], [
+        "Monstergirls", "Monster Sex", "Monster Rape", "Dragons", "Centaurs",
+        "Minotaurs", "Goblins", "Fairies", "Succubus", "Incubus", "Wolf Girls", "Wolf Guys"
+    ], defaultRating),
+
+    createKinkCategory("Vore & Insertion", ["Self", "Partner"], [
+        "Vore Consensual", "Vore Noncon", "Cock Vore", "Breast Vore", "Anal Vore",
+        "Oral Vore", "Vaginal Vore", "Unbirth", "Live Insertions", "All The Way Through"
+    ], defaultRating),
+
+    createKinkCategory("Transformation & Modification", ["Self", "Partner"], [
+        "Bimbofication", "Stepfordization", "Cock Transformation", "Cock Shrinking",
+        "Breast Expansion", "Ass Expansion", "Muscles", "Extreme Muscles",
+        "Body Bulges", "Face Bulges", "Bodyswapping", "Fusion", "Giantess"
+    ], defaultRating),
+
+    createKinkCategory("Medical & Biological", ["General"], [
+        "Lactation", "Pregnancy", "Extreme Pregnancy", "Enemas", "Menstruation",
+        "Medical Play", "Speculums", "Milf-ification", "Nursing Handjob"
+    ], defaultRating),
+
+    createKinkCategory("Restraint & Equipment", ["Self", "Partner"], [
+        "Chastity", "Bondage Gear", "Blindfolds", "Collars", "Leash",
+        "Shibari", "Encasement", "Rope-play", "Restraints"
+    ], defaultRating),
+
+    createKinkCategory("Toys & Devices", ["Self", "Partner"], [
+        "Sex Toys", "Public Vibrators", "Hidden Vibrators", "Sounding",
+        "Electric Shocks", "Inflation", "Speculums"
+    ], defaultRating),
+
+    createKinkCategory("Fetish Wear & Looks", ["Self", "Partner"], [
+        "Latex", "Zentai", "Uniforms", "School Uniform", "School Swimsuit",
+        "Alternate Costumes", "Naked Apron", "Glasses", "Tattoos", "Piercings",
+        "Freckles", "Tanlines", "Unnatural Hair Colors", "Painted Nails"
+    ], defaultRating),
+
+    createKinkCategory("Misc. Fetish", ["Giving", "Receiving"], [
+        "Fisting", "Frotting", "Footjobs", "Handjobs", "Titjobs (Paizuri)",
+        "Foot Play", "Cock Worship", "Ass Worship", "Facesitting",
+        "Breast Smothering", "Armpits", "Tickling", "Sensation Play", "Electro Stimulation"
+    ], defaultRating),
+
+    createKinkCategory("Extreme / Edge", ["Giving", "Receiving"], [
+        "Cutting", "Blood", "Ballplay", "Castration", "Circumcision", "Scat",
+        "Watersports", "Vomiting", "Forced Vomit", "Murder", "GURO", "Torture"
+    ], defaultRating)
+];
